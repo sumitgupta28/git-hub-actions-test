@@ -14,6 +14,6 @@ jobs:
           npm -v
       - name: Python Commond 
         run: |
-          import platfrom
-          print (platfrom.processors())
+          import platform
+          print (platform.processors())
         shell: python
