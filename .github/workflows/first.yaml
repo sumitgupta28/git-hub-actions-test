@@ -9,6 +9,8 @@ on:
       - "closed"
       - "assigned"
       - "reopened"
+  schedule:
+    - "0 0/10 0 ? * * *"
 
 jobs: 
   run-shell-commond: 
