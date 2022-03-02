@@ -9,7 +9,7 @@ jobs:
       - name: echo a string
         run: echo "Git Hub Action Test"
       - name: multiline script 
-        run: !
+        run: |
           node -v
           npm -v
 
