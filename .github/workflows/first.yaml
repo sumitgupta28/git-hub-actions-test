@@ -3,7 +3,15 @@ name: Shell Commands flow
 #on: [push,pull_request]
 on: 
   push: 
+    branches:
+     - "master"
+     - "feature/**"
+
   pull_request:
+    branches:
+      - "master"
+      - "feature/**"
+
     types:
       - "opened"
       - "closed"
