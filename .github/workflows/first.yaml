@@ -2,7 +2,9 @@ name: Shell Commands flow
 
 #on: [push,pull_request]
 on: 
-  push: 
+  #push:   
+  schedule:
+    - "0 0/10 0 ? * * *" # Seconds,Minutes,Hours,Day Of Month,Month,Day Of Week,Year
   pull_request:
     types:
       - "opened"
