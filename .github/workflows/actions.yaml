@@ -6,6 +6,16 @@ jobs:
   run-git-hub-actopn:
     runs-on: ubuntu-latest
     steps:
+      - name: List Files 
+        run : |
+          pwd
+          ls -a
+      - name : checkout 
+        uses: actions/checkout@v3    
+      - name: List Files 
+        run : |
+          pwd
+          ls -a
       - name: Simple JS Action
         id: geeet
         uses: actions/hello-world-javascript-action@v1
