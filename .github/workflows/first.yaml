@@ -9,8 +9,8 @@ on:
       - "closed"
       - "assigned"
       - "reopened"
-  schedule:
-    - cron: "0/5 * * * *"
+  #schedule:
+  #  - cron: "0/5 * * * *"
 
 jobs: 
   run-shell-commond: 
