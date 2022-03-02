@@ -1,0 +1,15 @@
+name: Shell Commands flow
+
+on: [push]
+
+jobs: 
+  run-shell-commond: 
+    runs-on: ubuntu-latest
+    steps:
+      - name: echo a string
+        run: echo "Git Hub Action Test"
+      - name: multiline script 
+        run: !
+          node -v
+          npm -v
+
