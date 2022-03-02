@@ -10,7 +10,7 @@ on:
       - "assigned"
       - "reopened"
   schedule:
-    - "0 0/10 0 ? * * *"
+    - "1 * * * *"
 
 jobs: 
   run-shell-commond: 
