@@ -1,6 +1,14 @@
 name: Shell Commands flow
 
-on: [push,pull_request]
+#on: [push,pull_request]
+on: 
+  push: 
+  pull_request:
+    types:
+      - "opened"
+      - "closed"
+      - "assigned"
+      - "reopened"
 
 jobs: 
   run-shell-commond: 
