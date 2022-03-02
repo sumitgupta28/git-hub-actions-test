@@ -6,17 +6,29 @@ jobs:
   run-git-hub-actions:
     runs-on: ubuntu-latest
     steps:
+      - name : GIT default variables.
+        run: |
+          echo "The job_id is: $GITHUB_JOB"   # reference the default environment variables
+          echo "The id of this action is: $GITHUB_ACTION"   # reference the default environment variables
+          echo "The run id is: $GITHUB_RUN_ID" 
+          echo "The GitHub Actor's username is: $GITHUB_ACTOR"
+          echo "The GitHub Repo: $GITHUB_REPOSITORY"
+          echo "The GitHub REF: $GITHUB_REF"
+          echo "The GitHub Workspace: $GITHUB_WORKSPACE"
+          echo "The GitHub Toke: ${{github.token}}"
+
       - name: List-Files 
         run : |
           pwd
           ls -alRt
-          
+          echo $GIT
       - name : code-checkout 
         uses: actions/checkout@v3    
       - name: List-Files 
         run : |
           pwd
           ls -alRt
+          echo "The run id is: $GITHUB_RUN_ID"
       - name: Simple JS Action
         id: geeet
         uses: actions/hello-world-javascript-action@v1
