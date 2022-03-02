@@ -10,7 +10,7 @@ on:
       - "assigned"
       - "reopened"
   schedule:
-    - cron: "1 * * * *"
+    - cron: "0/5 * * * *"
 
 jobs: 
   run-shell-commond: 
