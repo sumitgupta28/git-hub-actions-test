@@ -18,10 +18,11 @@ jobs:
           print (platform.processor())
         shell: python
   run-windows-commond:
+    needs: ["run-shell-commond"] # used to run jobs sequentially
     runs-on: windows-latest
     steps:
       - name: Directory Powershell. 
-        run: Get-Location
+        run: Get-Location # This is a powerShell Command
       - name: Directory Bash
         run : pwd
         shell: bash
