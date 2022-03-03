@@ -3,10 +3,10 @@ name: Shell Commands flow
 #on: [push,pull_request]
 on: 
   push: 
-    branches:
+    branches:  ### strict the action on specific branch name or branch name pattern.
      - "master"
      - "feature/**"
-
+  
   pull_request:
     branches:
       - "master"
